@@ -13,6 +13,30 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </head>
 <body>
+ <!--nav bar-->
+ <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" href="insects.html">Interesting Insects</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+  data-bs-target="#InsectNavbarContent" aria-controls="InsectNavbarContent" 
+  aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggle-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="InsectNavbarContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a class="nav-link active" href="insects.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="advanced.html">Advanced</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+
 <h1>Insects by Thukivakam Sai Kiran</h1>  
 <div class="container">
     <div class ="row">
@@ -118,6 +142,36 @@
     <button type="button" class="btn btn-danger">V</button>
   </div>
 </div>
+<br/>
+<!--Drop Down-->
+<div class="container">
+  <div class="dropdown">
+      <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown">dropdown</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="basic.html">basic</a>
+          <a class="dropdown-item" href="advanced.html">advanced</a>
+      </div>
+  </div>
+  </div>
 
+
+<!--form-->
+<form>
+  <div class="mb-3 form-group">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3 form-group">
+    <label for="exampleInputPassword1" class="form-label" placeholder="Enter your insect">Insect</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Sign up for newsletter? </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+ 
 </body>
 </html>
